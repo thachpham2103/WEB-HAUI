@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tham khảo tx1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #header table{
+            width: 40cm;
+        }
+        #header table td{
+            text-align: left;
+        }
+        #header th{
+            text-align: right;
+        }
+        #sub-header ul{
+            background-color: rgb(45, 45, 97);
+            list-style-type: none;
+        }
+        #sub-header li{
+            opacity:100%;
+            display: inline-flex;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            border-right: 1px solid rgb(201, 197, 197);
+        }
+        #sub-header a{
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+        #sub-header a:hover{
+            color: #ff3399;
+        }
+        /* #body{
+            background-image: url(ảnh\ nền.jpg);
+        } */
+        #menu{
+            width: 8 cm;
+            height: 15cm;
+            border: 1px solid black;
+            margin-top: 10px;
+            margin-left: 1px;
+            float: left;
+        }
+        #menu ul{
+            list-style-type: none;
+            text-align: left;
+        }
+        #menu li{
+            width: auto ;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            margin: 10px;
+        }
+        #menu ul li{
+            position: relative;
+        }
+        #menu a{
+            text-decoration:none;
+            display: block;
+            color: black;
+        }
+        #menu li a:hover{
+            color: blue;
+        }
+        #menu .sub-menu{
+            left: 250px;
+            top: 0;
+            position: absolute;
+            display: none;
+            border: 1px solid black;
+        }
+        #menu li:hover .sub-menu{
+            display:block;
+            position:relative;
+        }
+        #menu center{
+            background-color: rgb(195, 195, 225);
+            margin-top: 1px;
+            height: 25px;
+        }
+        #content{
+            text-align: left;
+            list-style-type: none; 
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        #content input{
+            background-color: #003366;
+            color:white;
+            height: 1cm;
+        }
+        #content .abc{
+            color: blue;
+        }
+        #content .abc:hover{
+            color: #ffff66;
+        }
+        #content .bcd{
+            color: red;
+        }
+        #content table{
+            background-color: white;
+            width: 30cm;
+            border: 1px;
+        }
+        #content td:hover{
+            transform: scale(1.25);
+        }
+        #content b{
+            background-color: rgb(144, 144, 204);
+        }
+       /* #long form .input{
+        margin-left: 2cm;
+        margin-right: 3cm;
+        background-color: #ff3399;
+        text-align: center;
+     display: block;
+       } */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <table>
+            <tr>
+                <td>
+                    <img src="anh6.png" width="275px" height="50px">
+                    <br><b>BRING VALUES TO CUSTOMER</b>
+                </td>
+                <th><img src="anh23.png" width="100px" height="100px"></th>
+                <th><img src="anh25.png" width="100px" height="100px"></th>    
+                <th><img src="anh2323.png" width="100px" height="100px"></th>
+                <th><img src="anh10.png" width="100px" height="100px"></th>
+            </tr>
+        </table>
+    </div>
+           
+    <div id="sub-header">
+        <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="#">DỊCH VỤ</a></li>
+            <li><a href="#">Ý TƯỞNG</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+    </div>
+    <div id="menu">
+        <b><center>DANH MỤC SẢN PHẨM</center></b>
+        <ul>
+            <li><a href="#">Máy, phụ kiện máy ép cám viên</a></li>
+            <li><a href="#">Máy và pụ kiện máy ép viên gỗ</a></li>
+            <li><a href="#">Máy và phụ kiện máy ép viên phân bón</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Máy ép viên phân bón</a></li>
+                    <li><a href="#">Khuôn máy ép viên phân bón</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Máy móc gia công khuôn ép cám</a></li>
+            <li><a href="#">Máy sản xuâ thức ăn chăn nuôi</a></li>
+            <li><a href="#">Bu lông cường độ cao</a></li>
+            <li><a href="#">Habermann matrit</a></li>
+            <li><a href="#">Mỡ bôi trơn thực phẩm</a></li>
+            <li><a href="#">Máy bơm dầu, bơm mỡ</a></li>
+            <li><a href="#">Thiết bị thủy lực</a></li>
+            <li><a href="#">Linh kiện thay thế máy may</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <b>Máy, phụ kiện máy ép cám viên</b>
+        <table>
+            <tr align="center">
+                <td><img src="anh10.png" width="150px" height="150px"></td>
+                <td><img src="anh23.png" width="150px" height="150px"></td>
+                <td><img src="anh25.png" width="150px" height="150px"></td>
+                <td><img src="anh233.png" width="150px" height="150px"></td>
+            </tr>
+            <tr align="center">
+                <th class="abc">WASER CPM 7726</th>
+                <th class="abc">BUMLER DPHD-95156</th>
+                <th class="abc">BUMLER DPHD-95164-610</th>
+                <th class="abc">BUMLER DPHD-96154</th>
+            </tr>
+            <tr align="center">
+                <th class="bcd">Giá: Liên hệ</th>
+                <th class="bcd">Giá: Liên hệ</th>
+                <th class="bcd">Giá: Liên hệ</th>
+                <th class="bcd">Giá: Liên hệ</th>
+            </tr>
+            <tr align="center">
+                <th><input type="button" value="Xem chi tiết"></th>
+                <th><input type="button" value="Xem chi tiết"></th>
+                <th><input type="button" value="Xem chi tiết"></th>
+                <th><input type="button" value="Xem chi tiết"></th>
+            </tr>
+            <tr align="center">
+                <td><img src="anh23.png" width="150px" height="150px"></td>
+                <td><img src="anh10.png" width="150px" height="150px"></td>
+                <td><img src="anh25.png" width="150px" height="150px"></td>
+                <td><img src="anh233.png" width="150px" height="150px"></td>
+            </tr>
+            <tr align="center">
+                <th class="abc">WASER CPM 7726</th>
+                <th class="abc">BUMLER DPHD-95156</th>
+                <th class="abc">BUMLER DPHD-95164-610</th>
+                <th class="abc">BUMLER DPHD-96154</th>
+            </tr>
+            <tr align="center">
+                <th class="bcd">Giá: Liên hệ</th>
+                <th class="bcd">Giá: Liên hệ</th>
+                <th class="bcd">Giá: Liên hệ</th>
+                <th class="bcd">Giá: Liên hệ</th>
+            </tr>
+            <tr align="center">
+                <th><input type="button" value="Xem chi tiết"></th>
+                <th><input type="button" value="Xem chi tiết"></th>
+                <th><input type="button" value="Xem chi tiết"></th>
+                <th><input type="button" value="Xem chi tiết"></th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

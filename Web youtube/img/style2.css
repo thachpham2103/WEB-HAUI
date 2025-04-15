@@ -1,0 +1,22 @@
+p{
+    font-size: 30px;
+    color: black;
+     height: 15px;
+     content: 30px;
+     background-color: chartreuse;
+     list-style: none;
+     text-align: center;
+     padding: 20px;
+}
+
+.mo_ta{
+    color: blue;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+/* 
+*{
+    background-color: blueviolet;
+
+} */

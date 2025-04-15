@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Dọc</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+      }
+
+      header {
+        background-color: #f4e1c9;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .logo {
+        height: 50px;
+        width: auto;
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+      }
+
+      .search input {
+        width: 200px;
+        padding: 3px;
+        margin-right: 10px;
+      }
+
+      .icon {
+        margin-left: 15px;
+      }
+
+      nav {
+        width: 200px;
+        background-color: aqua;
+        padding-top: 60px; 
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav ul li {
+        position: relative;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        white-space: nowrap;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav ul li:hover {
+        background-color: red;
+      }
+
+      nav ul li:hover a {
+        color: rgb(48, 188, 172);
+      }
+
+      nav ul li .con {
+        position: static;
+        display: none;
+        flex-direction: column;
+        background-color: #c4ffff;
+      }
+
+      nav ul li.cha:hover .con {
+        display: flex;
+      }
+
+      #content {
+        margin-left: 200px; 
+        margin-top: 60px; 
+        width: calc(100% - 200px);
+        padding: 15px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      #content td,
+      #content th {
+        width: 25%;
+        text-align: center;
+        vertical-align: top;
+        padding: 5px;
+      }
+
+      #content .vb {
+        color: black;
+      }
+
+      #content th:hover {
+        color: red;
+      }
+
+      #content .gia {
+        color: red;
+      }
+
+      #content .sale {
+        color: black;
+      }
+      footer{
+        background-color: beige;
+        width: 100%;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img
+        src="img/res/thiet-ke-cua-hang-tap-hoa-12.jpg"
+        alt="Logo"
+        class="logo"
+      />
+      <div class="search">
+        <input type="text" placeholder="Search For Product" />
+        <div>Search</div>
+      </div>
+      <!-- <div class="icon">Icon 1</div>
+      <div class="icon">Icon 2</div> -->
+      <input type="button" alt="nút bấm" value="tùy chọn" />
+    </header>
+
+    <!-- MENU DỌC -->
+    <nav>
+      <ul>
+        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="#">Sản Phẩm</a></li>
+        <li><a href="#">Thể Loại</a></li>
+        <li class="cha">
+          <a href="#">Chi Nhánh</a>
+          <ul class="con">
+            <li><a href="#">Thanh Hóa</a></li>
+            <li><a href="#">Hà Nội</a></li>
+            <li><a href="#">Đà Nẵng</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Liên Hệ</a></li>
+        <li><a href="#">Mã Loại</a></li>
+        <li><a href="#">Chi Tiết</a></li>
+        <li><a href="#">Thống kê</a></li>
+        <!-- <li><a href="#"><input type="text" value="tìm kiếm" width="30px" height="50px"></a></li> -->
+      </ul>
+    </nav>
+
+    <!-- Nội dung -->
+    <div id="content">
+      <table border="1">
+        <tr>
+          <td>
+            <img src="1.png" height="400px" width="200px" />
+          </td>
+          <td>
+            <img src="2.png" height="400px" width="200px" />
+          </td>
+          <td>
+            <img src="3.png" height="400px" width="200px" />
+          </td>
+          <td>
+            <img src="4.png" height="400px" width="200px" />
+          </td>
+        </tr>
+        <tr>
+          <th class="vb">Vòng tay Galaxy hàng chính hãng</th>
+          <th class="vb">Ốp lưng Led covẻ Galãy S10+ hàng chính hãng</th>
+          <th class="vb">Ốp lưng hàng chính hãng</th>
+          <th class="vb">Balo laptop Targer hàng chính hãng</th>
+        </tr>
+        <tr>
+          <td class="gia"><big>590.000 đ</big></td>
+          <td class="gia"><big>690.000 đ</big></td>
+          <td class="gia"><big>249.000 đ</big></td>
+          <td class="gia"><big>299.000 đ</big></td>
+        </tr>
+        <tr>
+          <td class="sale">
+            <del><small>900.000 đ</small></del>
+          </td>
+          <td class="sale">
+            <del><small>4.900.000 đ</small></del>
+          </td>
+          <td class="sale">
+            <del><small>900.000 đ</small></del>
+          </td>
+          <td class="sale">
+            <del><small>900.000 đ</small></del>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="5.png" height="400px" width="200px" />
+          </td>
+          <td>
+            <img src="6.png" height="400px" width="200px" />
+          </td>
+          <td>
+            <img src="7.png" height="400px" width="200px" />
+          </td>
+          <td>
+            <img src="8.png" height="400px" width="200px" />
+          </td>
+        </tr>
+        <tr>
+          <th class="vb">Đồng hồ hàng chính hãng</th>
+          <th class="vb">Bao da hàng chính hãng</th>
+          <th class="vb">Bao da hàng chính hãng</th>
+          <th class="vb">tai nghe hàng chính hãng</th>
+        </tr>
+        <tr>
+          <td class="gia"><big>590.000 đ</big></td>
+          <td class="gia"><big>690.000 đ</big></td>
+          <td class="gia"><big>249.000 đ</big></td>
+          <td class="gia"><big>299.000 đ</big></td>
+        </tr>
+        <tr>
+          <td class="sale">
+            <del><small>900.000 đ</small></del>
+          </td>
+          <td class="sale">
+            <del><small>4.900.000 đ</small></del>
+          </td>
+          <td class="sale">
+            <del><small>900.000 đ</small></del>
+          </td>
+          <td class="sale">
+            <del><small>900.000 đ</small></del>
+          </td>
+        </tr>
+      </table>
+      <footer>
+        <p style="text-align: left">Địa chỉ:Đại học Công Nghiệp Hà Nội</p>
+        <p>Tây Tựu, Nam Từ Liêm, Hà Nội</p>
+        <p style="text-align: right;"> Tổng số</p>
+      </footer>
+    </div>
+  </body>
+</html>
