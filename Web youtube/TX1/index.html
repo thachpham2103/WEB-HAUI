@@ -90,9 +90,20 @@
         color: white;
       }
 
+      .menu-item {
+        font-size: 18px;
+        color: white;
+        position: relative;
+        cursor: pointer;
+      }
+
       .menu-item:hover .menu-item-list {
         display: block;
         cursor: pointer;
+      }
+
+      .menu-item:hover {
+        color: yellow;
       }
 
       /* content */
@@ -174,8 +185,7 @@
       <div class="menu">
         <ul class="menu-list">
           <li class="menu-item">Trang chủ</li>
-          <li class="menu-item">
-            Sản phẩm
+          <li class="menu-item">Sản phẩm
             <ul class="menu-item-list">
               <li class="menu-item-sub">Sửa tắm nam</li>
               <li class="menu-item-sub">Sữa tắm nữ</li>
